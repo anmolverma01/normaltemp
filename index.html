@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS</title>
+
+<!---------------------------Styling----------------------->
+<style>
+/*-----------------------BodyStyle----------------------*/
+body
+	{
+		font-family:ubuntu;
+	}
+::selection 
+		{
+ 		 	color:#ff0066;
+		}
+/*--------------animation-------------------------------*/
+@keyframes postanimation 
+{
+  from {background-color: #99d6ff;}
+  to {background-color: #ff1a1a;}
+}
+/*-----------------------HeaderStyle----------------------*/
+.headermain
+	{
+		width:100%;
+		height:100px;
+		background-image:linear-gradient(#99e6ff,#004d66);
+	}
+.headerimage
+	{
+		padding:10px;
+	}
+.logo
+	{
+		width:85%;
+		float:left;
+		color:#002633;
+		font-size:75px;
+		font-weight: 600;
+		text-shadow:0px 3px 8px #ccf2ff;
+		font-family:arial;
+
+	}
+.logotext
+	{
+		width:10%;
+		float:left;
+		color:white;
+		font-size:70px;
+		font-weight: 600;
+		text-shadow:0px 5px 6px #006080;
+	}
+.allheaderlink
+	{
+		background-color:#80dfff;
+		width:100%;
+		height:30px;
+		font-size:18px;
+		margin-top:5px;
+
+	}
+.link
+	{
+		float:left;
+		color:#004d66;
+		padding-left:15px;
+		padding-right:15px;
+		cursor:pointer;
+		padding-top:5px;
+		border-right:3px solid #007399;
+		font-family:ubuntu;
+
+
+	}
+.link:hover
+	{
+		color:Black;
+		font-weight:600;
+	}
+.active
+	{
+		color:Black;
+		font-weight:600;
+	}
+/*-----------------------RightStyle----------------------*/
+aside
+	{
+		height:650px;
+		background-color:#ccf2ff;
+		width:30%;
+		float:right;
+		padding-left:10px;
+		padding-right:10px;
+		margin-top:8px;
+	}
+a
+	{
+		cursor:pointer;
+		padding-left:10px;
+		text-decoration:none;
+		color:#000a1a;
+	}
+a:hover
+	{
+		cursor:pointer;
+		font-weight: 600;
+	}
+.asidecontent
+	{
+		color: #007399;
+	}
+/*-----------------------LeftStyle----------------------*/
+.leftcontent
+	{
+		float:left;
+		width:65%;
+		padding-left:10px;
+	}
+.post
+	{
+		padding-top:10px;
+		padding-bottom:10px;
+		float:left;
+		border-bottom:1px solid #007399;
+	}
+.postimage
+	{
+		padding-top:30px;
+		float:left;
+		width:15%;
+	}
+			.postdp
+			{
+				border:none;
+				width:120px;
+				height:120px;
+				border-radius:120px;
+				background-color:#99e6ff;
+			}
+			.postdp:hover
+				{
+					animation-name: postanimation;
+  					animation-duration: 3s; 
+				}		
+.postcontent
+	{
+		padding-bottom:15px;
+		float:left;
+		width:85%;
+		font-size:15px;
+	}
+.readmore
+	{
+		width:130px;
+		height:25px;
+		background-color:white;
+		border:none;
+		border-radius:5px;
+		padding-top:5px;
+		box-shadow:0px 3px 10px grey;
+	}
+.readmore:hover
+	{
+		background-color:#b3ecff;
+	}
+/*-----------------------FooterStyle----------------------*/
+footer
+	{
+		width:100%;
+		height:50px;
+		background-color:#004d66;
+		float:left;
+		text-align:center;
+		font-size:12px;
+		color:white;
+		font-weight:300;
+		font-family:arial;
+		margin-top:20px;
+
+	}
+	.cedcoss
+		{
+			text-decoration:none;
+			color:yellow;
+		}
+		a.cedcoss:hover
+		{
+			font-size:15px;
+		}
+/*-----------------------ResponsiveStyle----------------------*/
+@media screen and (max-width:800px)
+	{
+		.logo
+	{
+		width:70%;
+		float:left;
+		color:#002633;
+		font-size:75px;
+		font-weight: 600;
+		text-shadow:0px 3px 8px #ccf2ff;
+		font-family:arial;
+
+	}
+.logotext
+	{
+		width:20%;
+		float:left;
+		color:white;
+		font-size:70px;
+		font-weight: 600;
+		text-shadow:0px 5px 6px #006080;
+	}
+		.post
+			{
+				width:100%;
+			}
+		.postimage
+			{
+				padding-top:30px;
+				float:left;
+				width:30%;
+			}
+		.postdp
+			{
+				border:none;
+				width:120px;
+				height:120px;
+				border-radius:120px;
+				background-color:#99e6ff;
+			}		
+		.postcontent
+			{
+				padding-bottom:15px;
+				padding-right:5px;
+				float:left;
+				width:65%;
+				font-size:15px;
+			}
+	}
+	
+</style>
+</head>
+<body>
+
+<!---------------------------Header----------------------->
+<header><div class="headermain">
+		<div class="headerimage"><div class="logotext">CSS</div><div class="logo">3</div></div><br>
+	</div>
+			<div class="allheaderlink">
+			<div class="link"><div class="active">Home</div></div>
+			<div class="link">Career</div>
+			<div class="link">About Us</div>
+			<div class="link">Contact Us</div>
+			<div class="link">Services</div>
+		</div>
+</header>
+<!---------------------------Right side content----------->
+<aside>
+		<h1>Extra Blogs</h1>
+		<hr><br>
+			<a href="">Who is Sieden?</a><p>
+			<a href="">Need of Social Media.</a><p>
+			<a href="">Where to start from?</a><p>
+			<a href="">Something new here.</a><p>
+		<p>
+			<h1>Other Widgets</h1>
+			<hr>
+			<br>
+				<span class="asidecontent">This is a blog that is created to submit the assignment of the <b>CEDCOSS</b> training session that is organized on the third day of joining to this firm.</span>
+		<p>
+				<span class="asidecontent">Other than this it is pleasure to work for a good project and get to work on time.</span>
+	</aside>
+<!-----------------------Left Side Content------------------>
+	<div class="leftcontent">
+		<div class="post">
+			<div class="postimage"><div class="postdp"></div></div>
+			<div class="postcontent">
+			<h2>Introduction to Colors</h2>
+			<span>Color (American English), or colour (Commonwealth English), is the characteristic of visual perception described through color categories, with names</span>
+		<p>
+			<div class="readmore"><b><a href="https://www.rbi.org.in/" rel="nofollow">Read More...</a></b></div>
+		
+		</div>
+		</div>
+		
+		<div class="post">
+			<div class="postimage"><div class="postdp"></div></div>
+			<div class="postcontent">
+			<h2>What is the role of RBI?</h2>
+			<span>The Reserve Bank of India (RBI) is India's central bank, responsible for the issue and supply of the Indian rupee and the regulation of the Indian banking system.</span>
+		<p>
+			<div class="readmore"><b><a href="https://www.rbi.org.in/" rel="nofollow">Read More...</a></b></div>
+		</div>
+		</div>
+		<div class="post">
+			<div class="postimage"><div class="postdp"></div></div>
+			<div class="postcontent">
+			<h2>Is WHO always Right?</h2>
+			<span>The World Health Organization (WHO) is a specialized agency of the United Nations responsible for international public health.</span>
+		<p>
+			<div class="readmore"><b><a href="https://www.rbi.org.in/" rel="nofollow">Read More...</a></b></div>
+		</div>
+		</div>
+	</div>
+<!------------------------Footer-------------------------->
+	<footer>
+		<h3>&copy; Copyright<a href="http://www.cedcoss.com/" class="cedcoss">CEDCOSS</a>. All rights are reserved.</h3>
+	</footer>
+
+</body>
+</html>
